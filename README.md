@@ -41,9 +41,6 @@ trader = Trader(10000)
 trader.enter_trade()
 ```
 
-## Code Quality
-The code is written with readability, modularity, and efficiency in mind. It includes caching mechanisms to minimize API calls, thereby improving performance. It also includes robust error handling to deal with various edge cases like invalid tickers or failed API calls.
-
 ### Features
 - **Global Cache**: Avoids redundant API calls by storing fetched data.
 - **Modularity**: Functions are organized based on their purpose, which makes it easy to understand and modify the code.
@@ -53,10 +50,6 @@ The code is written with readability, modularity, and efficiency in mind. It inc
 - **Data Freshness**: The cache stores data for a single run. If the bot needs up-to-date data, you need to run it again.
 - **Risk Management**: The current implementation doesn't include any risk management features. It is advisable to integrate this bot as part of a broader risk management strategy.
 
-## Code Review Notes
-- **Efficiency**: Cache usage is well-optimized, though a more advanced caching mechanism could be implemented for even better performance.
-- **Vulnerability**: No code vulnerabilities were found. However, the application is dependent on third-party services like Yahoo Finance, so there might be limitations based on their API.
-- **Testing**: Unit tests are not included in the current implementation.
 
 ## Contribution
 Feel free to fork this project, open issues, or submit PRs. For major changes, please open an issue first to discuss what you would like to change.
