@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 from datetime import datetime, timedelta
-import allocator
-import dcf_module 
-import valuator
+from allocator import allocator, tangency_portfolio
+from dcf_module import fetch_stock_data, discount_rate, cost_of_equity, get_FCF, Terminal_Value, DCF
+from valuator import valuator
 
 # Trade Executor
 class Trader:
